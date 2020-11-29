@@ -1,0 +1,55 @@
+.envelope {
+    width: 16px;
+    height: 12px;
+}
+
+.smartphone {
+    width: 10px;
+    height: 16px;
+}
+
+.envelope, .smartphone {
+    margin-right: 10px;
+    fill: $color-primary;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-header:hover .envelope,  .contact-header:hover .smartphone,
+.contact-header:focus .envelope,  .contact-header:focus .smartphone {
+    fill: $color-accent;
+}
+
+.svg-footer-web {
+    width: 20px;
+    height: 20px;
+    fill: $color-background;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-name-svg {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 107px /*32px*/;
+    left: 55px /*15px*/;
+}
+
+.modal-phone-svg {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 174px /*32px*/;
+    left: 54px /*15px*/;
+}
+
+.modal-email-svg {
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    top: 243px /*32px*/;
+    left: 54px /*15px*/;
+}

@@ -1,0 +1,29 @@
+.block-feature {
+    /*margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);*/
+    width: 270px;
+}
+
+.icon-feature {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: $color-button-background;
+    margin-bottom: 30px;
+}
+
+.svg-feature {
+    width: 70px;
+    height: 70px;
+}
+
+.header-feature {
+    font-weight: 700;
+    font-size: 14px;
+    color: $color-header;
+    text-transform: uppercase;
+    line-height: 16px;
+    margin-bottom: 10px;
+}

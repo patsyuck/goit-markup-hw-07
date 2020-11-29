@@ -1,0 +1,25 @@
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: $color-accent;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-header {
+    color: $color-header;
+}
+
+.logo-footer {
+    color: $color-background;
+}
+
+.logo:hover, .logo:focus {
+    color: $color-accent;
+    /* text-decoration: underline; */
+    cursor: pointer;
+}
