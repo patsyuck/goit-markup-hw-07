@@ -9,10 +9,10 @@
     border: 0px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px $color-shadow-6;
-}
 
-.button-main:hover {
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .buttons {
@@ -29,15 +29,15 @@
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.buttons:hover, .buttons:focus {
-    color: $color-background;
-    background-color: $color-accent;
-    /* text-decoration: underline; */
-    cursor: pointer;
-    box-shadow: 0px 3px 1px $color-shadow-3, 0px 1px 2px $color-shadow-2, 0px 2px 2px $color-shadow-4;
-    border-radius: 4px;
+    &:hover, &:focus {
+        color: $color-background;
+        background-color: $color-accent;
+        /* text-decoration: underline; */
+        cursor: pointer;
+        box-shadow: 0px 3px 1px $color-shadow-3, 0px 1px 2px $color-shadow-2, 0px 2px 2px $color-shadow-4;
+        border-radius: 4px;
+    }
 }
 
 .button-telegram {
@@ -52,12 +52,12 @@
     transition-property: border-color, outline;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button-telegram:hover, .button-telegram:focus {
-    border-color: $color-accent;
-    outline: $color-accent;
-    cursor: pointer;
+    &:hover, &:focus {
+        border-color: $color-accent;
+        outline: $color-accent;
+        cursor: pointer;
+    }
 }
 
 .text-telegram {
@@ -69,12 +69,6 @@
     letter-spacing: 0.06em;
     color: $color-background;
     margin-right: 10px;
-}
-
-.svg-telegram {
-    width: 24px;
-    height: 24px;
-    fill: $color-background;
 }
 
 .button-submit {
@@ -92,12 +86,12 @@
     transition-property: border-color, outline;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button-submit:hover, .button-submit:focus {
-    border-color: $color-accent;
-    outline: $color-accent;
-    cursor: pointer;
+    &:hover, &:focus {
+        border-color: $color-accent;
+        outline: $color-accent;
+        cursor: pointer;
+    }
 }
 
 .text-submit {
@@ -120,20 +114,20 @@
     /*background-image: url(../images/icons/close.svg);*/
     border: 1px solid $color-shadow-3;
     border-radius: 50%;
+
+    &:hover, &:focus {
+        border-color: $color-accent;
+        outline: $color-accent;
+        cursor: pointer;
+    }
 }
 
 .close {
     width: 11px;
     height: 11px;
     fill: $color-close;
-}
 
-.button-close:hover, .button-close:focus {
-    border-color: $color-accent;
-    outline: $color-accent;
-    cursor: pointer;
-}
-
-.button-close:hover .close, .button-close:focus .close {
-    fill: $color-accent;
+    .button-close:hover &, .button-close:focus & {
+        fill: $color-accent;
+    }
 }

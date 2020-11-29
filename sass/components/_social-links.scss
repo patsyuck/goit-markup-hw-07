@@ -1,4 +1,4 @@
-.item-web:not(:last-child) {
+.item-web:not(:last-child), .item-footer-web:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -13,23 +13,25 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        background-color: $color-accent;
+    }
 }
 
-.link-web:hover, .link-web:focus,
-.link-footer-web:hover, .link-footer-web:focus {
-    background-color: $color-accent;
-}
-
-.link-web:hover .svg-web, .link-web:focus .svg-web,
-.link-footer-web:hover .svg-footer-web, .link-footer-web:focus .svg-footer-web {
-    fill: $color-background;
-}
-
-.svg-web {
-    width: 20px;
-    height: 20px;
-    fill: $color-icon;
-    transition-property: fill;
+.link-footer-web {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: $color-footer-link-background;
+    border-radius: 50%;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        background-color: $color-accent;
+    }
 }

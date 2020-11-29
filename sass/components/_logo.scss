@@ -8,6 +8,13 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover, &:focus {
+        color: $color-accent;
+        /* text-decoration: underline; */
+        cursor: pointer;
+    }
 }
 
 .logo-header {
@@ -16,10 +23,4 @@
 
 .logo-footer {
     color: $color-background;
-}
-
-.logo:hover, .logo:focus {
-    color: $color-accent;
-    /* text-decoration: underline; */
-    cursor: pointer;
 }

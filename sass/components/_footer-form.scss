@@ -15,10 +15,10 @@
     transition-property: border-color, outline;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.input-telegram:hover, .input-telegram:focus {
-    border-color: $color-accent;
-    outline: $color-accent;
-    cursor: pointer;
+    &:hover, &:focus {
+        border-color: $color-accent;
+        outline: $color-accent;
+        cursor: pointer;
+    }
 }

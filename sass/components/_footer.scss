@@ -2,10 +2,10 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $color-footer-background;
-}
 
-footer address {
-    margin-top: 20px;
+    & address {
+        margin-top: 20px;
+    }
 }
 
 .container-contacts:not(:last-child) {
@@ -14,15 +14,14 @@ footer address {
 
 .contact-footer {
     color: $color-footer-contact;
-    font-style: normal;
 }
 
 .address {
     color: $color-background;
-    font-style: normal;
 }
 
 .contact-footer, .address {
+    font-style: normal;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,21 +62,4 @@ footer address {
 .icons-footer-web {
     display:flex;
     margin-top: 20px;
-}
-
-.item-footer-web:not(:last-child) {
-    margin-right: 10px;
-}
-
-.link-footer-web {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    background-color: $color-footer-link-background;
-    border-radius: 50%;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
