@@ -2,10 +2,16 @@
     padding-bottom: 94px;
 }
 
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+
 .image {
-    /*margin-left: 30px;
-    flex-basis: calc(100% / 3 - 30px);*/
-    width: 370px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+    /*width: 370px;*/
     position: relative;
 }
 
