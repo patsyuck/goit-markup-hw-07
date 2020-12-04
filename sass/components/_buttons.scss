@@ -1,5 +1,5 @@
 .button-main {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-main;
     font-weight: 700;
     font-size: 16px;
     color: $color-background;
@@ -16,7 +16,7 @@
 }
 
 .buttons {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-main;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -61,7 +61,7 @@
 }
 
 .text-telegram {
-    font-family: Roboto, sans-serif;
+    font-family: $font-main;
     font-style: 400;
     font-weight: bold;
     font-size: 16px;
@@ -95,7 +95,7 @@
 }
 
 .text-submit {
-    font-family: Roboto, sans-serif;
+    font-family: $font-main;
     font-style: 400;
     font-weight: bold;
     font-size: 16px;
